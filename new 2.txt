@@ -1,0 +1,22 @@
+CREATE TABLE [dbo].[Info]
+(
+	[InfoId] INT NOT NULL IDENTITY,
+	[PersonId] INT NOT NULL , 
+    [TelNo] VARCHAR(10) NULL, 
+    [CellNo] VARCHAR(10) NULL, 
+    [AddressLine1] VARCHAR(30) NULL, 
+    [AddressLine2] VARCHAR(30) NULL, 
+    [AddressLine3] VARCHAR(10) NULL, 
+    [AddressCode] VARCHAR(10) NULL, 
+    [PostalAddress1] VARCHAR(30) NULL, 
+    [PostalAddress2] VARCHAR(30) NULL, 
+    [PostalCode] NCHAR(10) NULL,
+	PRIMARY KEY ([InfoId]),
+    CONSTRAINT [FK_Info_Person] FOREIGN KEY ([PersonId]) REFERENCES [Person]([Id])
+    
+)
+
+Josh	Password01
+		pass
+
+Talia	Password1
